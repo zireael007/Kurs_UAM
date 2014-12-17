@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: #D4CF6A;
+    font-family: sans-serif;
+	text-align: center;
+}
+
+input {
+	
+	margin-top: 60px;
+	background-color: #FFFAAA;
+	width: 500px;
+	height: 50px;
+	padding: 5px;
+	font-stretch: expanded;
+	border-radius: 10px;
+	border-width: thick;
+	border-color: #807A15;
+	border-style:dotted solid;
+	font-size: 23px;
+	color: #3E5100;
+	margin-right: 40px;
+}
+
+button {
+   border-top: 1px solid #aaa439;
+   background: #807b15;
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   border-radius: 8px;
+   color: #fff9aa;
+   font-size: 14px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+   
+button:hover {
+   border-top-color: #aaa439;
+   background: #aaa439;
+   color: #554f00;
+   }
+   
+button:active {
+   border-top-color: #807b15;
+   background: #807b15;
+   }
+   
+   
+ul {
+	width: 800px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	list-style-type: none;
+	font-variant: small-caps;
+}
+
+#naglowek{
+	font-family: sans-serif;
+	line-height: 100px; /* <-- this is what you must define */
+    vertical-align: middle;
+	text-align: center;
+	font-size: 40px;
+	color: #A8A652;
+	background-color: #444207;
+}
+
+li {
+	padding: 10px;
+	border-color: #AAA439;
+	border-radius: 5px;
+	border-width: thin;
+	border-style: solid;
+	background-color: #FFFAAA;
+	color: #AAA439;	
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#listview li:hover {
+    background-color: #AAA439;
+    color: #fff9aa;
+}
+
+#listview li.active {
+    background-color: #FFFAAA;
+	color: #3E5100;	
+    border-color: #444207;
+}
+
+#listview li.active:hover {
+    background-color: #AAA439;
+}
+
+#footerview {
+   line-height: 60px; /* <-- this is what you must define */
+   vertical-align: middle;
+	background-color: #838131;
+	position:absolute;
+	bottom:0;
+	right: 0;
+	left: 0;
+   color: #FFFAAA;
+   font-size: 17px;
+	text-align: center;
+	
+   
+}
+
+#spinner {
+	text-align: center;
+	
+}

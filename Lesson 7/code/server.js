@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var savedData = [];
+var savedData = [{id:0, value:'kupić bilet'},{id:1, value: 'zrobić check-in'}];
 
 app.use(express.static('./'));
 // parse application/x-www-form-urlencoded

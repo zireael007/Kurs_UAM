@@ -1,22 +1,63 @@
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Moje MVC</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
 
-<head></head>
+	<body>
+		<div id="wrapper">
+			<div id = "naglowek">	 	
+				Moja  &nbsp;lista
+			</div>
+			<div>
+				<input id="inputview" type="text" >
+				<button id="buttonNew">Dodaj do listy</button>
+			</div>
+			<div>
+				<ul id="listview">
+			</ul>
+			</div>
+			<div id="active"></div>
+			<div id="spin">  
+        <script type="text/javascript" src="js/spin.js"></script>  
+		  <script type="text/javascript">  
+ 				 var opts = {  
+  lines: 20, // The number of lines to draw   
+  length: 50, // The length of each line  
+  width: 10, // The line thickness  
+  radius: 10, // The radius of the inner circle  
+  rotate: 0, // The rotation offset  
+  color: '#000', // #rgb or #rrggbb  
+  speed: 1, // Rounds per second  
+  trail: 60, // Afterglow percentage  
+  shadow: false, // Whether to render a shadow  
+  hwaccel: false, // Whether to use hardware acceleration  
+  className: 'spinner', // The CSS class to assign to the spinner  
+  zIndex: 2e9, // The z-index (defaults to 2000000000)  
+  };  
 
-<body>
-	Test zapytania POST.
-
-	<script type="text/javascript">
-		var httpRequest = new XMLHttpRequest();
-		httpRequest.onload = function () {
-			if (httpRequest.status !== 200) {
-				throw new Error('Request failed');
-			}
-			console.log(httpRequest);
-		};
-	httpRequest.open('POST', '/api/todos');
-	httpRequest.responseType="json";
-	httpRequest.setRequestHeader('Content-Type', 'application/json');
-	httpRequest.send(JSON.stringify([{id: 0, value: 'test'}, {id: 1, value: 'test222'}]));
-	</script>
-</body>
+  </script>  
+			<div id="footerview">
+                Wszystkie: <span id="allElts">0</span> / Aktywne: <span id="activeElts">0</span>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/ee.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/inputView.js"></script>
+		<script type="text/javascript" src="js/listView.js"></script>	
+        <script type="text/javascript" src="js/footerView.js"></script>	
+		<script type="text/javascript" src="js/inputCtrl.js"></script>
+		<script type="text/javascript" src="js/listCtrl.js"></script>
+        <script type="text/javascript" src="js/footerCtrl.js"></script>	
+		<script type="text/javascript" src="js/store.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	
+	</body>
+	
+		
+	 
+	
 </html>
